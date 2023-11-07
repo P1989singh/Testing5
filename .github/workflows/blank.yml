@@ -1,5 +1,4 @@
-name: Semantic Versioning
-
+name: Release
 on:
   push:
     branches:
@@ -23,4 +22,3 @@ jobs:
           semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
