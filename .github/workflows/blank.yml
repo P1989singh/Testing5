@@ -1,5 +1,4 @@
 name: Semantic Versioning
-
 on:
   push:
     branches:
@@ -11,7 +10,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Install Semantic Release1
         run: |
           npm install -g semantic-release
@@ -23,4 +21,3 @@ jobs:
           semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
